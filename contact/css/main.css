@@ -1,0 +1,131 @@
+:root {
+    /* Bootstrap 4 */
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    /* Made by me */
+    --text-dark: #212529;
+}
+body.dark{
+    background-color: #2f3136;
+}
+body.light{
+    background-color: #f2f3f5;
+}
+.bg-light{
+    background-color: var(--white);
+}
+.header{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+}
+/* #mode-btn{
+    margin-bottom: 10px;
+} */
+nav{
+    grid-area: nav;
+}
+nav > ul{
+    overflow: hidden;
+    list-style: none;
+    margin-bottom: 0 !important;
+}
+nav > ul > li{
+    display: inline-block;
+}
+nav > ul > li > a{
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+nav > ul > li > a:hover{
+    text-decoration: none;
+}
+.text-black{
+    color: #000;
+}#social{
+    margin: 20px auto;
+}
+#social ul{
+    list-style: none;
+    font-size: 30px;
+}
+#social ul li a{
+    text-decoration: none;
+}
+#social ul li a:hover{
+    text-decoration: none;
+}
+#social ul li a:active{
+    text-decoration: none;
+}
+body.dark #social ul li a{
+    color: var(--white);
+}
+body.dark #social ul li a:hover{
+    color: var(--white);
+}
+body.dark #social ul li a:active{
+    color: var(--white);
+}
+body.light #social ul li a{
+    color: var(--text-dark);
+}
+body.light #social ul li a:hover{
+    color: var(--text-dark);
+}
+body.light #social ul li a:active{
+    color: var(--text-dark);
+}
+body.light .fa-youtube{
+    color: #ff0000;
+}
+body.light .fa-twitter{
+    color: #1f9ff4;
+}
+body.light .fa-twitch{
+    color: #9147ff;
+}
+body.light .fa-reddit{
+    color: #ff4500;
+}
+body.light .fa-discord{
+    color: #7289da;
+}
+@media screen and (max-width:800px){
+    #primaryContainer .grid-body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+@media screen and (max-width:500px){
+    #primaryContainer{
+        width: 100%;
+    }
+}

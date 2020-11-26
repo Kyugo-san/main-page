@@ -1,0 +1,106 @@
+:root {
+    /* Bootstrap 4 */
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    /* Made by me */
+    --text-dark: #212529;
+}
+body.dark{
+    background-color: #2f3136;
+}
+body.light{
+    background-color: #f2f3f5;
+}
+.bg-light{
+    background-color: var(--white);
+}
+.header{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+}
+#mode-btn{
+    margin-bottom: 10px;
+}
+#primaryContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas: 'nav nav''header header''body body';
+    gap: 20px;
+    width: 80%;
+    max-width: 1140px;
+    margin: auto;
+}
+#primaryContainer .header{
+    grid-area: header;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+#primaryContainer .grid-body{
+    grid-area: body;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    max-width: 1140px;
+}
+#primaryContainer .grid-body > *{
+    padding: 20px;
+    box-sizing: border-box;
+}
+#primaryContainer > nav{
+    grid-area: nav;
+}
+#primaryContainer > nav > ul{
+    overflow: hidden;
+    list-style: none;
+    margin-bottom: 0 !important;
+}
+#primaryContainer > nav > ul > li{
+    display: inline-block;
+}
+#primaryContainer > nav > ul > li > a{
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+.text-black{
+    color: #000;
+}
+@media screen and (max-width:800px){
+    #primaryContainer .grid-body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+@media screen and (max-width:500px){
+    #primaryContainer{
+        width: 100%;
+    }
+}
